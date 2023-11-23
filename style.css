@@ -14,16 +14,16 @@ header {
     align-items: center;
 }
 
-
-.logo {
-    color: white;
+.logo{
     font-size: 40px;
-
+    color: white;
 }
 
 nav ul {
     list-style: none;
     display: flex;
+    flex-direction: row; /* Alterado para manter os itens do menu na mesma linha */
+    justify-content: space-around; /* Espaçamento entre os itens do menu */
 }
 
 nav li {
@@ -33,7 +33,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: #fff;
-    margin: 0 15px;
+    margin: 0 15px; /* Espaçamento lateral entre os itens do menu */
 }
 
 nav .submenu {
@@ -45,11 +45,7 @@ nav .submenu {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     z-index: 1;
     width: 100%;
-    text-align: left; /* Adicionando esta linha para alinhar o texto à esquerda */
-}
-
-nav li {
-    position: relative;
+    text-align: left;
 }
 
 nav li:hover > .submenu {
@@ -57,7 +53,7 @@ nav li:hover > .submenu {
 }
 
 nav .submenu li {
-    width: 100%; /* Garantindo que a largura do submenu seja igual à largura do pai */
+    width: 100%;
 }
 
 nav .submenu a {
@@ -66,7 +62,6 @@ nav .submenu a {
     color: #fff;
     text-decoration: none;
 }
-
 
 main {
     padding: 20px;
